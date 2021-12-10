@@ -29,6 +29,11 @@ extern "C" {
 
 /*=====[Definitions of public data types]====================================*/
 
+/**
+ * @brief Definicion de una estructura de datos publica que contiene los datos del alumno.
+ * 
+ */
+
 typedef struct alumno_s {
     char apellidos[30];
     char nombres[30];
@@ -39,8 +44,25 @@ typedef struct alumno_s {
 
 /*=====[Prototypes (declarations) of public functions]=======================*/
 
+/**
+ * @brief Funcion que verifica si la longitud de la cadena compuesta por los datos del alumno y el formato es mayor a 0. Agrega a la variable cadena el texto con la informacion del alumno con formato.
+ * 
+ * @param cadena 
+ * @param espacio 
+ * @param alumno 
+ * @return true
+ * @return false 
+ */
 bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno);
 
+/**
+ * @brief Funcion que prepara el texto con formato para multiples alumnos.
+ * 
+ * @param cadena 
+ * @param espacio 
+ * @return true 
+ * @return false 
+ */
 bool SerializarAlumnos(char * cadena, size_t espacio);
 
 /*=====[Prototypes (declarations) of public interrupt functions]=============*/

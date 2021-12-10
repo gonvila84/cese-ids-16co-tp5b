@@ -25,18 +25,30 @@
 
 /*=====[Definitions of public global variables]==============================*/
 
+/**
+ * @brief Instancia constante de la estructura alumno_s para el alumno Esteban Volentini
+ * 
+ */
 static const struct alumno_s ESTEBAN_VOLENTINI = {
     .apellidos = "VOLENTINI",
     .nombres = "Esteban Daniel",
     .documento = "23.517.968",
 };
 
+/**
+ * @brief Instancia constante de la estructura alumno_s para el alumno Gonzalo Vila
+ * 
+ */
 static const struct alumno_s GONZALO_VILA = {
     .apellidos = "VILA",
     .nombres = "Gonzalo Vila",
     .documento = "31.061.45",
 };
 
+/**
+ * @brief Vector de estructuras constantes de tipo alumno_t. Se inicializa con las constantes previamente definidas.
+ * 
+ */
 const alumno_t ALUMNOS[] = {
     &ESTEBAN_VOLENTINI,
     &GONZALO_VILA,
